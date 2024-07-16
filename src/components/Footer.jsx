@@ -2,9 +2,12 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <footer>
+            <hr/>
+            <div className="footer-content">
+                <p className="footer-text">&copy; 2024 Seth Crist | Full-Stack Software Developer</p>
+            </div>
+        </footer>
     );
 };
 
