@@ -18,10 +18,11 @@ const Header = () => {
                     </div>
 
                     <div className="header-right">
-                        <h2>user Name</h2>
+                        <h2 className="header">UserName</h2>
                     </div>
                 </div>
             </div>
+            <hr />
         </>
     );
 };
