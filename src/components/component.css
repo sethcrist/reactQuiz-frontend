@@ -1,0 +1,31 @@
+/* Header */
+.header-container {
+    max-height: 150px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.Mainlogo {
+    height: 75px;
+    width: 75px;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    font-size: 15px;
+}
+.header-cards {
+    font-size: 25px;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}

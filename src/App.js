@@ -22,7 +22,7 @@ const App = () => {
             {/*<Route path="/signUp" element={<SignUp />} />*/}
             {/*<Route path="/signIn" element={<SignIn />} />*/}
         </Routes>
-        <Footer />
+        {/*<Footer />*/}
     </>
   );
 }
