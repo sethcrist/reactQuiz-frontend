@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from "react-hook-form"
 import { Form, FormGroup, Label } from "reactstrap"
 import { Link, useNavigate } from "react-router-dom";
+import "./pages.css"
 
 const SignUp = ({ signUp }) => {
     const navigate = useNavigate();
