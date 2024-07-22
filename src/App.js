@@ -8,21 +8,17 @@ import mockUsers from "./mockUsers";
 import mockNotes from "./mockNotes";
 import Index from "./pages/Index"
 import UserAuth from "./pages/UserAuth";
-import SignUp from "./pages/SignUp";
-import SignIn from "./pages/SignIn";
 
 const App = () => {
-  const [currentUser, setCurrentUser] = useState(mockUsers[0]);
+  const [currentUser, setCurrentUser] = useState(mockUsers[1]);
   const [notes, setNotes] = useState(mockNotes);
 
   return (
     <>
-        <Header />
+        <Header currentUser={currentUser} />
         <Routes>
             <Route path="/userAuth" element={<UserAuth />} />
-            <Route path="/" element={<Index />} />
-            {/*<Route path="/signUp" element={<SignUp />} />*/}
-            {/*<Route path="/signIn" element={<SignIn />} />*/}
+            <Route path="/" element={<Index notes={notes} currentUser={currentUser} />}  />
         </Routes>
         <Footer />
     </>

@@ -3,7 +3,7 @@ import './component.css'
 import { NavLink, useNavigate } from 'react-router-dom';
 import MainLogo from '../assets/clever-cards.png'
 
-const Header = () => {
+const Header = ({ currentUser }) => {
     return (
         <>
             <div className="header-container">
@@ -18,7 +18,7 @@ const Header = () => {
                     </div>
 
                     <div className="header-right">
-                        <h2 className="header">UserName</h2>
+                        <h2 className="header">{currentUser.username}</h2>
                     </div>
                 </div>
             </div>
