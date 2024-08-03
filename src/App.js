@@ -1,7 +1,6 @@
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import NoteCard from './components/NoteCard';
 import {useState} from "react";
 import { Routes, Route } from 'react-router-dom';
 import mockUsers from "./mockUsers";

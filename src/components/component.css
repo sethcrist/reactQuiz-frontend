@@ -35,13 +35,60 @@ hr {
     border: 1px solid #9a9a9a;
 }
 
+/* NoteCard */
+.note-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    height: 150px;
+}
+
+.note-card-front,
+.note-card-back {
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #9a9a9a;
+    border-radius: 10px;
+}
+
+.note-card-front {
+    transform: rotateY(0deg);
+}
+
+.note-card-back {
+    transform: rotateY(180deg);
+}
+
+.note-container.flipped .note-card-front {
+    transform: rotateY(-180deg);
+}
+
+.note-container.flipped .note-card-back {
+    transform: rotateY(0deg);
+}
+
 /* Footer */
 footer {
     bottom: 1px;
 }
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
+    bottom: 1px
 }
